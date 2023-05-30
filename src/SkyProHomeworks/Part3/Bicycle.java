@@ -1,9 +1,14 @@
 package SkyProHomeworks.Part3;
 
-public class Bicycle extends Auto
+public class Bicycle extends Transport
 {
-    public Bicycle (String modelName, int wheelsCount)
-    {
+    public Bicycle(String modelName, int wheelsCount) {
         super(modelName, wheelsCount);
+    }
+
+    @Override
+    public void service() {
+        super.service();
+        System.out.println("---\n");
     }
 }
